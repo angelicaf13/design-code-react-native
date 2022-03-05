@@ -27,7 +27,7 @@ class Avatar extends React.Component {
     fetch("http://hp-api.herokuapp.com/api/characters")
     .then(response => response.json())
     .then(responseData => {
-      console.log(responseData)
+      //console.log(responseData)
       this.setState({
         photo: responseData[0].image
       })
